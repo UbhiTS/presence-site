@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="128" y2="128">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="bars1" gradientUnits="userSpaceOnUse" x1="64" y1="30" x2="64" y2="98">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+    <linearGradient id="ring1" gradientUnits="userSpaceOnUse" x1="20" y1="20" x2="108" y2="108">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="128" height="128" rx="28" fill="url(#bg1)"/>
+  <circle cx="64" cy="64" r="46" fill="none" stroke="url(#ring1)" stroke-width="3.5"/>
+  <rect x="33" y="53" width="9" height="22" rx="4.5" fill="url(#bars1)"/>
+  <rect x="47" y="42" width="9" height="44" rx="4.5" fill="url(#bars1)"/>
+  <rect x="60" y="32" width="9" height="64" rx="4.5" fill="#ffffff"/>
+  <rect x="73" y="45" width="9" height="38" rx="4.5" fill="url(#bars1)"/>
+  <rect x="86" y="53" width="9" height="22" rx="4.5" fill="url(#bars1)"/>
+  <circle cx="97" cy="31" r="8.5" fill="#0f172a"/>
+  <circle cx="97" cy="31" r="5.5" fill="#34d399"/>
+</svg>

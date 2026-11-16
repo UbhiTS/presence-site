@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presence - Privacy Policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="./"><span class="dot" aria-hidden="true"></span>Presence</a>
+    <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective November 9, 2026</p>
+
+    <p>Presence is a side-panel plugin for Jetski and Google Antigravity that gives your AI agent a talking avatar and voice. This policy explains what information Presence uses, why, where it is kept, and how to remove it.</p>
+
+    <h2>The short version</h2>
+    <ul>
+      <li>Presence runs on your own computer. There is no Presence server, and the developer never receives your data or sign-in.</li>
+      <li>Presence only talks to Google services, directly from your computer, to do what you asked.</li>
+      <li>Presence does not use analytics, advertising, or tracking, and does not sell or share your data.</li>
+    </ul>
+
+    <h2>Information Presence uses</h2>
+    <h3>When you choose "Sign in with Google"</h3>
+    <p>Presence requests these Google permissions:</p>
+    <ul>
+      <li><strong>Email address</strong> (<code>openid</code>, <code>userinfo.email</code>): shown in Presence so you know which account is connected.</li>
+      <li><strong>Google Cloud access</strong> (<code>https://www.googleapis.com/auth/cloud-platform</code>): used only to
+        <ul>
+          <li>list Google Cloud projects you can access, so you can choose one;</li>
+          <li>check whether the chosen project has the Vertex AI API enabled, billing linked, and the right permissions;</li>
+          <li>after you explicitly confirm in Presence: enable the Vertex AI API, link a billing account you pick, grant your own account the Vertex AI User role, or create a new project;</li>
+          <li>run Gemini Live sessions on Vertex AI in your chosen project to produce the avatar's voice and video.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Presence never makes changes to your Google Cloud resources without a confirmation click from you, and never accesses projects for any other purpose.</p>
+
+    <h3>Content you ask Presence to speak or hear</h3>
+    <ul>
+      <li><strong>Agent replies:</strong> to speak a reply, Presence sends a short spoken summary of your agent's reply text to the Gemini Live API on Vertex AI in your chosen project.</li>
+      <li><strong>Voice prompts:</strong> when you press the mic, speech-to-text is done by your browser's built-in speech recognition or by the Jetski/Antigravity app you're using. The resulting text is sent to your agent conversation.</li>
+      <li><strong>Meeting awareness (optional):</strong> Presence can stay quiet during meetings only if you have separate calendar/meeting command-line tools installed. It reads whether you are in a meeting right now and keeps a small status file on your computer. This does not use your Presence Google sign-in.</li>
+    </ul>
+
+    <h2>Where your information is stored</h2>
+    <p>Everything Presence keeps stays on your computer. It keeps:</p>
+    <ul>
+      <li><strong>Your Google sign-in</strong> (a refresh token) and your connection settings (account email, chosen project), in Presence's data folder.</li>
+      <li><strong>Your preferences</strong> (avatar, voice, display name, speech detail).</li>
+      <li><strong>Recent Presence chat cards</strong> (your recent spoken or typed commands and the avatar's spoken summaries), in the panel's local browser storage so they're still there when you reopen it.</li>
+      <li><strong>Short avatar clips</strong> it generates for quick acknowledgements (for example, "Got it!"), cached so they can play instantly.</li>
+      <li><strong>A meeting status file</strong>, only if you use the optional meeting awareness.</li>
+    </ul>
+    <p>Short-lived access tokens are kept in memory only and are never written to disk or logs. Presence keeps no copies of your data anywhere else, and the developer never receives any of it.</p>
+
+    <h2>How Presence protects your data</h2>
+    <ul>
+      <li>All requests to Google go directly from your computer over encrypted connections (HTTPS/TLS and secure WebSockets).</li>
+      <li>Files in Presence's data folder are created with permissions that only your user account can read.</li>
+      <li>Presence's local helper only listens on your own computer (127.0.0.1) and requires a per-session security token, so other websites and other people can't use it.</li>
+    </ul>
+
+    <h2>Data retention and deletion</h2>
+    <ul>
+      <li>Your sign-in and connection settings are kept until you sign out or uninstall Presence. Signing out deletes them right away and asks Google to revoke the sign-in.</li>
+      <li>Recent chat cards are limited to a short recent history; older cards are dropped automatically. Clearing the panel's site data, or uninstalling Presence, deletes them.</li>
+      <li>Cached avatar clips and preferences are kept until you uninstall Presence or delete its data folder.</li>
+      <li>Content sent to Vertex AI in your Google Cloud project is processed under your own Google Cloud terms; Presence does not keep a copy of it.</li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>Presence does not sell, rent, or share your information with anyone. The only party that receives data is Google, through the Google APIs listed above, and only to provide the features you use. Your use of those Google services is also covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the Google Cloud terms.</p>
+
+    <h2>Google API Services User Data Policy</h2>
+    <p>Presence's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide the user-facing features described above, is not used for advertising, is not sold, is not transferred to others, and is not read by humans.</p>
+    <p>Presence does not use Google user data, including any data from Google Workspace APIs, to develop, improve, or train generalized or non-personalized AI or machine-learning models, and does not transfer it to anyone for that purpose.</p>
+
+    <h2>Your choices and removing data</h2>
+    <ul>
+      <li><strong>Sign out / Disconnect</strong> in Presence settings deletes the saved sign-in from your computer and asks Google to revoke it.</li>
+      <li>You can remove Presence's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Uninstalling Presence and deleting its data folder removes everything it stored.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>Presence is a developer tool and is not directed to children under 13.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:ubhits@gmail.com">ubhits@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="./">Presence home</a> · <a href="terms.html">Terms of Service</a>
+  </footer>
+</body>
+</html>
